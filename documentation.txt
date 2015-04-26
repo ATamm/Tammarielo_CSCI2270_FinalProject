@@ -1,0 +1,157 @@
+Documentation File
+Adam Tammariello
+4/24/2015
+Final Project
+
+Music Library
+
+
+Public Methods
+
+Prototype:
+ void::musicManager addSongToInventory(string, string, string, int)
+Description:
+This method takes the  title, artist, genre, and popularity from the file, creates a song struct, and adds to the inventory hash table
+how to call:
+musicManager->addSongToInventory("Revolution", "Beatles", "Rock", 20);
+pre-conditions:
+no conditions
+post conditions:
+song added to inventory
+
+Prototype:
+Song * musicManager:: findSongInInventory(string, *int)
+Description:
+this method takes the the title of a song and generates a hash key and looks for a song title in the inventory hash table
+How to Call
+Song *song = musicManager->findSongInInventory("Revolution", &index)
+Pre-Conditions:
+Assumes the song exists in inventory.
+Post-Condition:
+Returns the pointer to the song if its in the inventory.
+
+Prototype:
+void musicManager:: deleteSongFromInventory(string)
+Description:
+creates a Hash of the song title, finds the song in  the inventory, and delete from the hash table.
+How to Call:
+musicManager->deleteSongFromInventory("Revolution")
+Pre-Condition:
+Assumes song is in inventory
+Post-Condition:
+song is deleted from inventory hash table. All pointers are properly adjusted.
+
+Prototype:
+void musicManager:: printInventory()
+Description:
+acesses all entries in the inventory vector. It prints the song and any linked list in that vector loccation.
+How To Call:
+musicManager->printInventory()
+Pre-Condition:
+assumes inventory is populated with Songs
+Post-Condition:
+no post condition
+
+Prototype:
+void musicManager::createPlaylist(string)
+Description:
+Creates a Playlist structure and assigns the name, and then gets a hash code for that name and adds the playlist to the Playlists hash table.
+How To Call:
+musicManager->createPlaylist(myPlaylist);
+Pre-Condition:
+no preconditions
+Post-Conditions:
+a playlist with a specified names is added to Playlists hash table.
+
+Prototype:
+void musicManager:: deletePlaylist(string)
+Description:
+creates a hash for the playlist name and deletes the playlist from the Playlist hash table
+How To Call:
+musicManager->deletePlaylist(myPlaylist)
+Pre-Condition:
+assumes playlist has been added to the Playlists hash table
+Post-Condition:
+playlist removed from playlist hash table.
+
+Prototype:
+void musicManager:: addSongToPlaylist(string, string)
+Description:
+finds the playlist and finds the song in the inventory, then adds a pointer to the song's vector for the playlist for the specific song.
+How To CallL
+musicManager->addSongToPlaylist("Revolution", "myPlaylist")
+Pre-Conditions:
+assumes songs are in inventory, and that a playlist is created
+Post-Condition:
+song pointer added to song's vector of the playlist
+
+Prototype:
+void musicManager:: deleteSongFromPlaylist(string, string)
+Description:
+finds the playlist and removes the song with that title from the song's vector of the playlist
+How To Call:
+musicManager->deleteSongFromPlaylist("Revolution", "myPlaylist)
+Pre-Conditions:
+assumes the playlists exists and the specified song was added to the playlist
+Post-Conditon:
+song deleted from playlist
+
+Prototype:
+Song* musicManager:: findSongInPlaylist(string,string)
+Description:
+finds the playlist and then finds the song in the song's vector of the playlist and returns a pointer to the song
+How to Call
+Song* song = musicManager->findSongInPlaylist("Revolution", "myPlaylist")
+Pre-Conditions:
+assumes playlist exists and song title is in playlist
+Post-Conditions:
+Returns pointer to song
+
+Prototype:
+void musicManager:: printPlaylist(string)
+Description:
+prints all songs in specified playlist
+How to Call
+musicManager->printPlaylist("myPlaylist)
+Pre-Conditions:
+Assumes playlist exists
+Post-Conditions:
+none
+
+Prototype
+Playlist * musicManager:: findPlaylist(string, int*)
+Description:
+Creates a hash for the playlist name, and find it in the playlist hash table, and returns a pointer to the playlist
+How To Call
+Playlist* playlist = musicManager->findPlaylist( "myPlaylist", &index)
+Pre-Condition:
+playlist exits
+Post-conditon:
+returns a pointer to the playlist
+
+Prototype:
+void musicManager:: sortPlaylistByGenre(string)
+Description:
+finds the given playlist and uses a private sorting algorthim to sort the playlist by genre
+How To Call:
+musicManager->sortPlaylistByGenre("myPlaylist")
+Pre-Condition:
+Playlist exists
+Post-Condition:
+songs in playlist are re-orderd by genre
+
+Prototype:
+void musicManager:: sortPlaylistByPopularity(string)
+Description:
+finds the given playlist and uses a private sorting algorthim to sort the playlist by genre
+How To Call:
+musicManager->sortPlaylistByGenre("myPlaylist")
+Pre-Condition:
+playlist exits
+Post-ConditionL:
+songs in playlist are re-ordered by genre
+
+
+
+
+
