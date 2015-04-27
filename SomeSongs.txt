@@ -1,0 +1,13 @@
+Heroes and Villains,The Beach Boys,Pop,10
+Wouldn't It Be Nice,The Beach Boys,Pop,5
+Revolution,The Beatles,Rock,3
+Surrender,Cheap Trick,Rock,20
+Ain't That A Kick In The Head,Dean Martin,Swing,8
+Hallelujah,Jeff Buckley,Soul,11
+Get Got,Death Grips,15
+Money,The Drums,25
+Black Dice,Death Grips,Experimental,23
+Trap House,Bobby Shmurda,Trap,3
+Party Hard,Andrew WK,Rock,24
+Dacou Blues,Captain Beefheart,Rock,30
+
