@@ -2,7 +2,7 @@
 
 Project Summary
 The program uses 2 hash tables to manage a music inventory for a radio station and several playlists for Dj's or requests.
-Movies contain a title and an artist, as well as a genre definition, and a popularity number based on the number of plays(1-30). The program reads in a pre-defined list of titles which make up the inventory. Although additional titles can be added as the music library is expanded. The title is the key to the hash-table. Users can print the inventory, or search for specific titles within the inventory, and can also create a playlist and add or delete titles from the playlist as well as delete entire playlists. The program can also sort individual playlists by Genre, or by popularity by song.
+Movies contain a title and an artist, as well as a genre definition, and a popularity number based on the number of plays(1-30). The program reads in a pre-defined list of titles which make up the inventory.  The title is the key to the hash-table. Users can print the inventory, or search for specific titles within the inventory, and can also create a playlist and add or delete titles from the playlist as well as delete entire playlists. The program can also sort individual playlists by Genre, or by popularity by song.
 
 
 
