@@ -50,7 +50,7 @@ class MusicManager
         ~MusicManager();
         void addSongToInventory(std::string songTitle, std::string artist, std::string genre, int songPopularity);
         Song* findSongInInventory(std::string songTitle, int *index);
-        void deleteSongFromInventory(std::string songTitle);
+        void deleteSongFromInventory(std::string songTitle); //Not a menu  option. Is tested in Driver. Use for Possible Extension.
         void printInventory();
         void createPlaylist(std::string playlistName);
         void deletePlaylist(std::string playlistName);
