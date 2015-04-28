@@ -112,7 +112,8 @@ Song* MusicManager::findSongInInventory(std::string songTitle, int *index) {
 /*Prototype:
 void musicManager:: deleteSongFromInventory(string)
 Description:
-creates a Hash of the song title, finds the song in  the inventory, and delete from the hash table.
+creates a Hash of the song title, finds the song in  the inventory, and delete from the hash table. Not a Menu option
+but can be used for the extension of the program.
 Pre-Condition:
 Assumes song is in inventory
 Post-Condition:
