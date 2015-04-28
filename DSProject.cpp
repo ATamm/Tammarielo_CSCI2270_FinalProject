@@ -17,7 +17,6 @@ int main (int argc, char* argv[])
 {
 	string value="";
 	string nextline="";
-//	ifstream infile(argv[1]); // file name input on command line
 	ifstream infile("SomeSongs.txt"); //file name hardcoded
     int selection=0;
 	string input="";
