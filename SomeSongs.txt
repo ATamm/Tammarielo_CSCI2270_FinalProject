@@ -4,10 +4,34 @@ Revolution,The Beatles,Rock,3
 Surrender,Cheap Trick,Rock,20
 Ain't That A Kick In The Head,Dean Martin,Swing,8
 Hallelujah,Jeff Buckley,Soul,11
-Get Got,Death Grips,15
-Money,The Drums,25
+Get Got,Death Grips,Experimental,15
+Money,The Drums,Indie,25
 Black Dice,Death Grips,Experimental,23
 Trap House,Bobby Shmurda,Trap,3
 Party Hard,Andrew WK,Rock,24
 Dacou Blues,Captain Beefheart,Rock,30
+Nu Cringe,Bygones,Math Rock,30
+Max Can't Surf,FIDLAR,Surf Punk,27
+Someday,The Growlers,Rock,30
+Magic Number,De La Soul,Hip-Hop,15
+Bear,The Antlers,Indie,25
+Sandstorm,Darude,Electronic,1
+Skin Surf,Tera Melos,Math Rock,10
+Rhubarb,Aphex Twin,Electronic,20
+Biblical Violence,Hella,Noise Rock,11
+My Girls,Animal Collective,Electronic,17
+No Waves,FIDLAR,Surf Punk,27
+Our Love Will Always Remain,The Aquadolls,Indie,18
+DreamHouse,Deafheaven,Black Metal,26
+Brind Da' Ruckus,Wu-Tang Clan,Hip-Hop,20
+Oh My Darlin' Don't Cry,Run The Jewels,Hip-Hop,26
+Monopoly,Danny Brown,Hip-Hop,17
+Motion Picture Soundtrack,Radiohead,Indie,28
+Always,Blink-182,Pop Punk,8
+Good Times Bad Times,Led Zepplin,Rock,14
+Baby's on Fire, Die Antwoord, Trash Rap,30
+Banned in DC,Bad Brains,Punk,13
+
+
+
 
