@@ -432,3 +432,50 @@ void MusicManager::quickSortGenre(std::vector<Song *> *arr, int left, int right)
      if (i < right)
           quickSortGenre(arr, i, right);
 }
+
+Song *MusicManager::likeSong(std::string songTitle, int *index){
+    int hash = hashSum(songTitle, tableSize);  // get the hash
+	*index = hash;
+	if (songInventory[hash] == NULL) {
+		return NULL;
+	} else {
+		if (songInventory[hash]->title == songTitle) {// song is first in chain
+			songInventory[hash]->likes += 1;
+			return songInventory[hash];
+		} else {
+			Song *nextSong = songInventory[hash]->next;
+			while (nextSong != NULL) {            // loop through all songs in chain
+				if (nextSong->title == songTitle) {
+				    nextSong->likes += 1;
+					return nextSong;
+				} else {
+					nextSong = nextSong->next;
+				}
+			}
+			return nextSong;     // song not found, return null
+		}
+	}
+}
+Song *MusicManager::dislikeSong(std::string songTitle, int *index){
+    int hash = hashSum(songTitle, tableSize);  // get the hash
+	*index = hash;
+	if (songInventory[hash] == NULL) {
+		return NULL;
+	} else {
+		if (songInventory[hash]->title == songTitle) {// song is first in chain
+			songInventory[hash]->likes -= 1;
+			return songInventory[hash];
+		} else {
+			Song *nextSong = songInventory[hash]->next;
+			while (nextSong != NULL) {            // loop through all songs in chain
+				if (nextSong->title == songTitle) {
+				    nextSong->likes -= 1;
+					return nextSong;
+				} else {
+					nextSong = nextSong->next;
+				}
+			}
+			return nextSong;     // song not found, return null
+		}
+	}
+}

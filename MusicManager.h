@@ -14,6 +14,8 @@ struct Song{
     std::string genre;
     int numPlays;
     int popularity;
+    int likes;
+    int dislikes;
     Song *next;
 
     Song(){};
@@ -25,6 +27,7 @@ struct Song{
         genre = songGenre;
         popularity = songPopularity;
         numPlays = 0;
+        likes = 0;
     }
 
 };
@@ -61,6 +64,8 @@ class MusicManager
         Playlist *findPlaylist(std::string name, int *index);
         void sortPlaylistbyGenre(std::string playlistName);
         void sortPlaylistbyPopularity(std::string playlistName);
+        Song* likeSong(std::string songTitle, int *index);
+        Song* dislikeSong(std::string songTitle, int *index);
     protected:
     private:
         int hashSum(std::string key, int size);

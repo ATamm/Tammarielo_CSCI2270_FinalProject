@@ -13,7 +13,7 @@
 using namespace std;
 
 
-int main (int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 	string value="";
 	string nextline="";
@@ -46,7 +46,7 @@ int main (int argc, char* argv[])
 
      }
 
-     while (selection != 11) { // loop until user selects 11
+     while (selection != 13) { // loop until user selects 11
      		cout<<"Welcome to the music manager! Please make a selection..."<<endl;
      		cout<<"1. View the music inventory"<<endl;
      		cout<<"2. Find a song in the inventory"<<endl;
@@ -58,7 +58,9 @@ int main (int argc, char* argv[])
      		cout<<"8. Delete your playlist"<<endl;
      		cout<<"9. Sort your playlist by popularity"<<endl;
      		cout<<"10. Sort your playlist by genre"<<endl;
-     		cout<<"11. Quit"<<endl;
+     		cout<<"11. Like a song"<<endl;
+     		cout<<"12. Dislike a song"<<endl;
+     		cout<<"13. Quit"<<endl;
      		getline(cin, input);
      		selection = atoi(input.c_str()); // get user selection
      		if (selection == 1) { // view inventory
@@ -191,7 +193,33 @@ int main (int argc, char* argv[])
            		} else {
            			musicManager->sortPlaylistbyGenre(playlist);
            		}
+           	} else if (selection == 11) {
+                cout<<"Enter song title:"<<endl;
+     			string title="";
+     			getline(cin, title);
+     			int index;
+     			Song *foundSong;
+     			foundSong = musicManager->likeSong(title, &index);
+     			if (foundSong == NULL) {
+     				cout<<"Sorry, we don't have that song"<<endl;
+     			} else {
+     				cout<<foundSong->title<<","<<foundSong->artist<<","<<foundSong->genre<<","<<foundSong->popularity<<","<<foundSong->likes<<" like(s)"<<endl;
+     			}
            	}
+           	else if (selection == 12) {
+                cout<<"Enter song title:"<<endl;
+     			string title="";
+     			getline(cin, title);
+     			int index;
+     			Song *foundSong;
+     			foundSong = musicManager->dislikeSong(title, &index);
+     			if (foundSong == NULL) {
+     				cout<<"Sorry, we don't have that song"<<endl;
+     			} else {
+     				cout<<foundSong->title<<","<<foundSong->artist<<","<<foundSong->genre<<","<<foundSong->popularity<<","<<foundSong->likes<<" like(s)"<<endl;
+     			}
+           	}
+
      }
         cout<<"Thanks for visiting"<<endl;
      	delete musicManager;
